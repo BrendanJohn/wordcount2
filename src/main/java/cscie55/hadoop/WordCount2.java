@@ -28,6 +28,7 @@ public class WordCount2 {
             StringTokenizer itr = new StringTokenizer(value.toString());
             while (itr.hasMoreTokens()) {
                 word.set(itr.nextToken());
+                word = new Text(word.toString().toLowerCase().replaceAll("[^A-Za-z0-9]", "").trim());
                 context.write(word, one);
             }
         }
