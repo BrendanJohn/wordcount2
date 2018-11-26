@@ -1,4 +1,4 @@
-package cscie55.hadoop;
+package cscie55.hw6;
 
 import java.io.IOException;
 import java.util.StringTokenizer;
